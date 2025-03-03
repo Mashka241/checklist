@@ -20,7 +20,24 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
