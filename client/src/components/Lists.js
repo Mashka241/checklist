@@ -18,16 +18,14 @@ export function Lists() {
   }, []);
   
   return(
-    <div>
+    <div className='container'>
       <NavLink to='/' end>Home</NavLink>
       <h1>Lists</h1>
-      <ul>{data.map(el => {
+      <div className='container'>{data.map(el => {
         return (
-          <NavLink key={el.id} to={`/lists/${el.id}`}>
-            <li>{el.title}</li>
-          </NavLink>
+          <NavLink key={el.id} to={`/lists/${el.id}`}>{el.title}</NavLink>
         );
-      })}</ul>
+      })}</div>
       <CreateList/>
     </div>
   );

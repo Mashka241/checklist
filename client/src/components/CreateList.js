@@ -30,7 +30,7 @@ function CreateListForm() {
 
   return (
     <div>
-      <div className='create-list-container'>
+      <div className='create-list-form'>
         <label htmlFor='title'>Title: </label>
         <input type='text' value={title} id='title' onChange={e => setTitle(e.target.value)} required />
 
@@ -71,9 +71,9 @@ export function CreateList() {
     <div>
       {
         showCreateForm ? 
-          <div>
+          <div className='create-list-container'>
             <CreateListForm/>
-            <button onClick={closeClickHandler}>Close</button>
+            <button className='close-button' onClick={closeClickHandler}></button>
           </div> 
           : 
           <button onClick={addListClickHandler}>Create new checklist</button>
