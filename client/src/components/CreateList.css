@@ -1,0 +1,7 @@
+.create-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    border: 1px solid black;
+}
